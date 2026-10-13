@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Creation Tool</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body id="pct">
+    <canvas id="bg"></canvas>
+    <a href="/">< Back</a>
+    <div id="intro"><h1>Project Creation Tool</h1>
+    <p>Scratcherrr is still in very early beta so I do not yet have a polished way of creating projects.<br>Because of this, I have made a very simple tool to create .scratcherr files. I recommend manually creating .scratcherr files though, since some features are neglected in the project creation tool.</p>
+    <p>Projects are stored in Scratcherr's data directory, <b>~/.config/scratcherr/</b> for UNIX and <b>%APPDATA%/com.pugsb.scratcherr</b> for windows</p>
+    <button id="new">New Project</button></div>
+    <div id="pctOutIntro">
+        <div id="sidebar">
+            <br>
+            <center><img id="icon" width="50%" height="150px"></center>
+            <p>Upload</p>
+            <button id="iconUpload">icon.png</button>
+            <button id="projectUpload">main.sb3</button>
+            <p>Save</p>
+            <button id="save">Save and Exit</button>
+        </div>
+        <div id="pctRest">
+            <h2>Project Name ("name")</h2>
+            <input id="projectName" type="text">
+            <h1>Settings ("settings")</h1>
+            <input id="turboMode" type="checkbox"> Turbo Mode ("turboMode")
+            <br><input id="framerate" type="number"> Max Framerate ("framerate")
+            <br><input id="maxClones" type="number"> Max Clones ("maxClones")
+            <br><input id="hqpen" type="checkbox"> High Quality Pen ("hqpen")
+            <br><input id="removeFence" type="checkbox"> Remove Fencing ("removeFence")
+            <br><input id="removeMiscLimit" type="checkbox"> Remove Misc Limits ("removeMiscLimit")
+            <br><input id="stageSizeX" type="number"> Stage Size X ("stageSize[0]")
+            <br><input id="stageSizeY" type="number"> Stage Size Y ("stageSize[1]")
+            <br><input id="compiler" type="checkbox"> Enable Compiler (T!!!) ("compiler")
+            <br><input id="warpTimer" type="checkbox"> Warp Timer (F!!!) ("warpTimer")
+            <br><input id="projectId" type="text"> Project ID ("projectId")
+            <br><input id="greenFlag" type="checkbox"> Show Green Flag on start ("greenFlag")
+            <br><input id="accentColor" type="color"> Accent Color ("accentColor")
+            <h2></h2>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.2/jszip.min.js"></script>
+    <script src="pct.js"></script>
+    <script src="/bg.js"></script>
+</body>
+</html>
